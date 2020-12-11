@@ -58,17 +58,26 @@ a:hover {
 	text-decoration: underline;
 }
 
+.a-blue-line:visited{
+	color: #551A8B;
+}
+
 .a-blue-line:hover{
 	color:#068edb;
 	text-decoration: underline;
 }
 
+
 .a-blue{
 	color:#186794;
 	font-weight:500;
 	text-decoration: none;
-
 }
+
+.a-blue:visited{
+	color: #551A8B;
+}
+
 .a-blue:hover{
 	color:#068edb;
 	text-decoration: underline;
