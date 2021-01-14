@@ -789,18 +789,20 @@ padding-right:.2rem;
 
 
 #img-diether{
-	
 	max-width: 200px;
 	border-bottom-left-radius: calc(.25rem - 1px);
     border-bottom-right-radius: calc(.25rem - 1px);
 }
 #img-wilko{
-	
 	max-width: 200px;
 	border-bottom-left-radius: calc(.25rem - 1px);
     border-bottom-right-radius: calc(.25rem - 1px);
 }
-
+#img-sibylle{
+	max-width: 200px;
+	border-bottom-left-radius: calc(.25rem - 1px);
+    border-bottom-right-radius: calc(.25rem - 1px);
+}
 
 #about-clients li{
 	margin-bottom: .25rem;
