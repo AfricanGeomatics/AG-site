@@ -32,9 +32,10 @@ module.exports = {
     "middleware": false,
     /*"serveStatic": [],*/
     "serveStatic": ['.'],
-    "serveStaticOptions": {extensions: ['html']},
+    "serveStaticOptions": {
+        "extensions": ['html']
+    },
         
-   
     "ghostMode": {
         "clicks": true,
         "scroll": true,
