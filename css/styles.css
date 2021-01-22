@@ -834,8 +834,8 @@ svg{
  	padding-bottom:80%;
     position:relative;
     height:0;
-	
 }
+
 .map-container iframe{
     position: absolute;
  	left:0;
@@ -844,13 +844,10 @@ svg{
     width:100%;
  }
 
-
 #top-link {
-	/*width:45px;
-	height:50px;*/
-	width:2.8rem;
-	height:2.8rem;
-	display: block; 
+	width:2.5rem;
+	height:2.5rem;
+	display: none; 
 	position: fixed; 
 	bottom: 1.5rem; 
 	right: 1.8rem; 
@@ -865,7 +862,6 @@ svg{
 	font-size: .9rem; 
 	font-weight: 600;
 	transition: background-color 0.3s ease;
-
 }
 
 #top-link:hover {
