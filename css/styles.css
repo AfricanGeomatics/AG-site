@@ -790,7 +790,6 @@ hr{
 .page-footer p{
 	
     font-size: .9rem;
-    
     font-weight: 300;
     margin-bottom: .5rem;
 }
@@ -810,6 +809,14 @@ hr{
 .page-footer a:hover{
 	color: white;
 	text-decoration: underline;
+}
+
+#disclaimer{
+	color: #ffc107;
+}
+
+#disclaimer:hover{
+	color: #f98717;
 }
 
 #footer-tel:hover{
