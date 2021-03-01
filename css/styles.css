@@ -665,7 +665,7 @@ hr{
 }
 
 
-/*downloads----------------------------------------*/
+/*links----------------------------------------*/
 
 .table{
 	color:#1d2b3a;
@@ -897,6 +897,9 @@ svg{
 	.container-small {
     	max-width: 960px;
 	}
+	.links_dropdown{
+		margin-left:-2.5rem;
+	}
 	h1{
 		font-size: 2rem;
 		}
@@ -938,7 +941,10 @@ svg{
 }
 
 @media (min-width:992px) and (max-width:1199px){
-
+	
+	.links_dropdown{
+		margin-left:-2.5rem;
+	}
 	h1{
 		font-size: 1.9rem;
 	}
@@ -977,6 +983,9 @@ svg{
 
 @media (min-width:768px) and (max-width:991px){
 	
+	.links_dropdown{
+		margin-left:-2.5rem;
+	}
 	h1{
 		font-size: 1.7rem;
 	}
@@ -1029,6 +1038,12 @@ svg{
 	    padding-top: .35rem;
 		padding-bottom: .35rem;
 	}
+	.dropdown-menu{
+		font-size:.9rem;
+	}
+	.links_dropdown{
+		margin-left:-3rem;
+	}
 	h1{
 		font-size: 1.5rem;
 		padding-left:2rem;
@@ -1067,6 +1082,11 @@ svg{
 	    font-size: 1.2rem;
 	    padding-top: .35rem;
 		padding-bottom: .35rem;
+	}.dropdown-menu{
+		font-size:.9rem;
+	}
+	.links_dropdown{
+		margin-left:-3rem;
 	}
 	h1{
 		font-size: 1.5rem;
@@ -1096,7 +1116,7 @@ svg{
 	.navbar-nav .dropdown-menu {
 	    position: absolute;
 	    float: none;
-	    margin-left:5.5rem;
+	    margin-left:4.5rem;
 	    margin-top:-1.7rem;
 	}
 	h1{
@@ -1130,7 +1150,7 @@ svg{
 	.navbar-nav .dropdown-menu {
 	    position: absolute;
 	    float: none;
-	    margin-left:5.5rem;
+	    margin-left:4.5rem;
 	    margin-top:-1.7rem;
 	}
 	#index-services-image{
