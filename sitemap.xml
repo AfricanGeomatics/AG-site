@@ -9,117 +9,122 @@
 
 <url>
   <loc>https://www.africangeomatics.com/</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/services</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/cadastral</loc>
-  <lastmod>2021-01-20T08:53:31+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/geodetic</loc>
-  <lastmod>2021-01-20T08:53:31+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/uav</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/topographic</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/engineering</loc>
-  <lastmod>2021-01-20T08:53:31+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/mapping</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/projects</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.africangeomatics.com/downloads</loc>
-  <lastmod>2021-01-20T08:53:31+00:00</lastmod>
+  <loc>https://www.africangeomatics.com/links</loc>
+  <lastmod>2021-03-01T08:53:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.africangeomatics.com/disclaimer</loc>
+  <lastmod>2021-03-01T08:53:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/namibian-map-system</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/about</loc>
-  <lastmod>2021-01-20T08:53:31+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/contact</loc>
-  <lastmod>2021-01-20T08:53:31+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/uploads/Land%20Survey%20Act%2033%20of%201993.pdf</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/uploads/Land%20Survey%20Regulations.pdf</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/uploads/Sectional%20Title%20Act%202%20of%202009.pdf</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/uploads/Sectional%20Title%20Regulations.pdf</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/uploads/Urban%20und%20Rural%20Planning%20Act%205%20of%202018.pdf</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/uploads/Urban%20und%20Rural%20Planning%20Regulations.pdf</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/uploads/Flexible%20Land%20Tenure%20Act%204%20of%202012.pdf</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/uploads/SURCON%20Act%2032%20of%201993.pdf</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/uploads/SURCON%20Regulations.pdf</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.africangeomatics.com/uploads/Landsurveyor%20Fees%20-%20Gov%20N196%20of%204%20Sept%2015.pdf</loc>
-  <lastmod>2021-01-20T08:53:32+00:00</lastmod>
+  <lastmod>2021-03-01T08:53:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
