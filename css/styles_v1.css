@@ -225,9 +225,7 @@ hr{
 
 
 /*cards*/
-.card{
-	border-radius: 0;
-}
+
 
 .card-shadow {
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -247,49 +245,39 @@ hr{
 	margin-bottom: .5rem;
 }
 
-.card-img-top{
-	border-radius: 0;
-}
-
 .card-img-radius{
-	border-radius: 0;
-	/*border-top-left-radius: calc(.25rem - 1px);
+	border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
     border-bottom-left-radius: calc(.25rem - 1px);
-    border-bottom-right-radius: calc(.25rem - 1px);*/
+    border-bottom-right-radius: calc(.25rem - 1px);
 }
 
 .card-img-radius-sm-left{
-	border-radius: 0;
-	/*border-top-left-radius: calc(.25rem - 1px);
+	border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
     border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;*/
+    border-bottom-right-radius: 0;
 }
 
 .card-img-radius-md-right{
-	border-radius: 0;
-	/*
 	border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: calc(.25rem - 1px);
-    border-bottom-right-radius: calc(.25rem - 1px);*/
+    border-bottom-right-radius: calc(.25rem - 1px);
 }
 
 .card-img-radius-md-top-right{
-	border-radius: 0;
-	/*border-top-left-radius: 0;
+	border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: calc(.25rem - 1px);
-    border-bottom-right-radius: calc(.25rem - 1px);*/
+    border-bottom-right-radius: calc(.25rem - 1px);
 }
 
 .background-card{
-	border-radius: 0;
-	/*border-top-left-radius: calc(.25rem - 1px);
+	border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
     border-bottom-left-radius: calc(.25rem - 1px);
-    border-bottom-right-radius: calc(.25rem - 1px);*/
+    border-bottom-right-radius: calc(.25rem - 1px);
 }
 
 .link-card {
@@ -299,10 +287,10 @@ hr{
 	overflow:hidden;
 	background-position: center;
 	background-size:cover;
-	/*border-top-left-radius: calc(.25rem - 1px);
+	border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
     border-bottom-left-radius: calc(.25rem - 1px);
-    border-bottom-right-radius: calc(.25rem - 1px);*/
+    border-bottom-right-radius: calc(.25rem - 1px);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);	
 }
 
@@ -318,8 +306,7 @@ hr{
 
 .services-card {
    	background-color: white;
-    /*border-radius: .25rem;*/
-    border-radius: 0;
+    border-radius: .25rem;
 	position: relative;
     display: flex;
     -ms-flex-direction: column;
@@ -336,9 +323,8 @@ hr{
 
 .info-card{
 	background-color: #eceff2;
-	border-radius: 0;
 	/*border: 1px solid #1d2b3a;*/
-	/*border-radius: calc(.25rem - 1px);*/
+	border-radius: calc(.25rem - 1px);
 }
 
 .card-border{
@@ -353,8 +339,8 @@ hr{
   	width: 100%; 
   	overflow: hidden; 
 	margin:auto;
-	/*border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);*/
+	border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
 }
 
 .img-hover-zoom img {
@@ -369,8 +355,8 @@ hr{
   	width: 100%; 
   	overflow: hidden; 
 	margin:auto;
-	/*border-top-right-radius: calc(.25rem - 1px);
-    border-bottom-right-radius: calc(.25rem - 1px);*/
+	border-top-right-radius: calc(.25rem - 1px);
+    border-bottom-right-radius: calc(.25rem - 1px);
 }
 
 .img-hover-zoom-right img {
@@ -447,10 +433,11 @@ hr{
 	left: 50%;
     transform: translateX(-50%);
 	min-width:112px;
-	background-color: rgba(255,255,255, 0.4);
-
+	background-color: white;
 	color:#1d2b3a;
   	border-color: #1d2b3a;
+
+	
 	font-weight: 500;
 	padding: .3rem .65rem;
 	transition: all 0.3s ease-in-out;
@@ -508,20 +495,6 @@ hr{
 #index-map-system-image{
 		max-height: 300px;
 	}
-
-#index-gps-converter-img{
-	max-width: 450px;
-	margin:auto;
-	border: 1px solid #1d2b3a;
-	border-color:#324b65;
-}
-
-#index-schwarzeck-transformation-img{
-	max-width: 600px;
-	margin:auto;
-	border: 1px solid #1d2b3a;
-	border-color:#324b65;
-}
 #index_about{/*card about overview*/
 	max-width:600px;
 	margin:auto;
@@ -531,35 +504,34 @@ hr{
 #index-uav{
 	background-image:url('../images/uav/fixed_wing1.jpg') ;
 }
-/*#index-uav:hover{
+#index-uav:hover{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('../images/uav/fixed_wing1.jpg');
-}*/
+}
 #index-cadastral{
 	background-image:url('../images/cadastral/farm_beacon1.jpg') ;
 	}
-/*#index-cadastral:hover{
+#index-cadastral:hover{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('../images/cadastral/farm_beacon1.jpg');
-}*/
-
+}
 #index-topographical{
 	background-image:url('../images/topographic/topo_bike.jpg') ;
 }
-/*#index-topographical:hover{
+#index-topographical:hover{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('../images/topographic/topo_bike.jpg');
-}*/
+}
 #index-engineering{
 	background-image:url('../images/engineering/road.jpg');
 	}
-/*#index-engineering:hover{
+#index-engineering:hover{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('../images/engineering/road.jpg');
-}*/
+}
 #index-geodetic{
 	background-image:url('../images/geodetic/geodetic_point2.jpg');
 	height:300px;
 	}
-/*#index-geodetic:hover{
+#index-geodetic:hover{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('../images/geodetic/geodetic_point2.jpg');
-}*/
+}
 
 #index_projects{
 	background-image:url('../images/project_kunene/kunene1.jpg');
@@ -735,23 +707,20 @@ hr{
 
 #img-diether{
 	max-width: 200px;
-	/*border-bottom-left-radius: calc(.25rem - 1px);
-    border-bottom-right-radius: calc(.25rem - 1px);*/
+	border-bottom-left-radius: calc(.25rem - 1px);
+    border-bottom-right-radius: calc(.25rem - 1px);
 }
 #img-wilko{
 	max-width: 200px;
-	/*border-bottom-left-radius: calc(.25rem - 1px);
-    border-bottom-right-radius: calc(.25rem - 1px);*/
+	border-bottom-left-radius: calc(.25rem - 1px);
+    border-bottom-right-radius: calc(.25rem - 1px);
 }
 #img-sibylle{
 	max-width: 200px;
-	/*border-bottom-left-radius: calc(.25rem - 1px);
-    border-bottom-right-radius: calc(.25rem - 1px);*/
+	border-bottom-left-radius: calc(.25rem - 1px);
+    border-bottom-right-radius: calc(.25rem - 1px);
 }
-#img-natasha{
-	max-width: 300px;
-}
-	
+
 #about-clients li{
 	margin-bottom: .25rem;
 }
@@ -938,19 +907,16 @@ svg{
 		font-size:1.7rem;
 	}
 	.card-img-radius-sm-left{
-		border-radius: 0;
-		/*
 		border-top-left-radius: calc(.25rem - 1px);
 	    border-top-right-radius: 0;
 	    border-bottom-left-radius: calc(.25rem - 1px);
-	    border-bottom-right-radius: 0;*/
+	    border-bottom-right-radius: 0;
 	}
 	.card-img-radius-md-right, .card-img-radius-md-top-right{
-		border-radius: 0;
-		/*border-top-left-radius: 0;
+		border-top-left-radius: 0;
 	    border-top-right-radius: calc(.25rem - 1px);
 	    border-bottom-left-radius:0;
-	    border-bottom-right-radius: calc(.25rem - 1px);*/
+	    border-bottom-right-radius: calc(.25rem - 1px);
 	}
 	#img-itrf1{
 	max-width: 400px;
@@ -986,18 +952,16 @@ svg{
 		font-size:1.6rem;
 	}
 	.card-img-radius-sm-left{
-		border-radius: 0;
-		/*border-top-left-radius: calc(.25rem - 1px);
+		border-top-left-radius: calc(.25rem - 1px);
 	    border-top-right-radius: 0;
 	    border-bottom-left-radius: calc(.25rem - 1px);
-	    border-bottom-right-radius: 0;*/
+	    border-bottom-right-radius: 0;
     }
 	.card-img-radius-md-right, .card-img-radius-md-top-right{
-		border-radius: 0;
-		/*border-top-left-radius: 0;
+		border-top-left-radius: 0;
 	    border-top-right-radius: calc(.25rem - 1px);
 	    border-bottom-left-radius:0;
-	    border-bottom-right-radius: calc(.25rem - 1px);*/
+	    border-bottom-right-radius: calc(.25rem - 1px);
 	}
 	#about-overview{
 		width:80%;
@@ -1026,25 +990,22 @@ svg{
 		font-size: 1.7rem;
 	}
 	.card-img-radius-sm-left{
-		border-radius: 0;
-		/*border-top-left-radius: calc(.25rem - 1px);
+		border-top-left-radius: calc(.25rem - 1px);
 	    border-top-right-radius: 0;
 	    border-bottom-left-radius: calc(.25rem - 1px);
-	    border-bottom-right-radius: 0;*/
+	    border-bottom-right-radius: 0;
 	}
 	.card-img-radius-md-right{
-		border-radius: 0;
-		/*border-top-left-radius: 0;
+		border-top-left-radius: 0;
 	    border-top-right-radius: calc(.25rem - 1px);
 	    border-bottom-left-radius:0;
-	    border-bottom-right-radius: calc(.25rem - 1px);*/
+	    border-bottom-right-radius: calc(.25rem - 1px);
 	}
 	.card-img-radius-md-top-right{
-		border-radius: 0;
-		/*border-top-left-radius: 0;
+		border-top-left-radius: 0;
 	    border-top-right-radius: calc(.25rem - 1px);
 	    border-bottom-left-radius:0;
-	    border-bottom-right-radius: 0;*/
+	    border-bottom-right-radius: 0;
 	}
 	#index-geodetic{
 		height:278.59px;
@@ -1089,11 +1050,10 @@ svg{
 		padding-right:2rem;
 	}
 	.card-img-radius-sm-left{
-		border-radius: 0;
-		/*border-top-left-radius: calc(.25rem - 1px);
+		border-top-left-radius: calc(.25rem - 1px);
 	    border-top-right-radius: 0;
 	    border-bottom-left-radius: calc(.25rem - 1px);
-	    border-bottom-right-radius: 0;*/
+	    border-bottom-right-radius: 0;
 	}
 }
 
@@ -1132,11 +1092,10 @@ svg{
 		font-size: 1.5rem;
 	}
 	.card-img-radius-sm-left{
-		border-radius: 0;
-		/*border-top-left-radius: calc(.25rem - 1px);
+		border-top-left-radius: calc(.25rem - 1px);
 	    border-top-right-radius: 0;
 	    border-bottom-left-radius: calc(.25rem - 1px);
-	    border-bottom-right-radius: 0;*/
+	    border-bottom-right-radius: 0;
 	}
 }
 
