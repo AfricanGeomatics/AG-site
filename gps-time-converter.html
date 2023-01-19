@@ -20,10 +20,54 @@
 </head>
 <body>
 	
-	
-	
+	<div>
+	<div class="container text-center">
+            <div class="card card-shadow text-center mb-4">
+                <div class="row no-gutters">
+
+                    <div class="col-md-6">
+                        <div class="card-body">
+                        <p class="title-top">Links</p>
+                        <hr class="hr-bottom-100 solid">
+                        <h4 class="card-title">GPS Time Converter</h4>
+                        <p class="text-left mb-0">This app converts between UTC and Local Time and GPS Time:</p>
+                        <div class="text-left mb-3">
+                            <a class="a-blue-line text-left" href="https://gps-time-converter.streamlitapp.com/" target="_blank">GPS Time Converter </a>
+                        </div>
+                        <div class="text-left">
+                            <a class="a-blue-line" href="https://gps-time-converter.streamlitapp.com/" target="_blank" data-toggle="tooltip" title="Click to open GPS Time Converter">
+                                <img id="index-gps-converter-img" src="./images/cadastral/gps-time-converter.jpg" class="info-card-img" alt="Schwarzeck-WGS84 Transformation">
+                            </a>
+                         </div>
+                        </div>
+                    </div>
+                  
+                    <div class="col-md-6">
+                        <div class="card-body">
+                        <p class="title-top">Links</p>
+                        <hr class="hr-bottom-100 solid">
+                        <h4 class="card-title">Schwarzeck Transformation</h4>
+                        <p class="text-left">A free app to transform between different coordinate system in the WGS84 and the Schwarzeck datum is available <a class="a-blue-line" href="https://schwarzeck-transformation.streamlitapp.com/" target="_blank"> here:</a>
+                        </p>
+                        <div class="text-left">
+                            <a class="a-blue-line" href="https://schwarzeck-transformation.streamlitapp.com/" target="_blank" data-toggle="tooltip" title="Click to open transformation app">
+                                <img id="index-schwarzeck-transformation-img" src="./images/cadastral/schwarzeck_transformation2.jpg" class="info-card-img" alt="Schwarzeck-WGS84 Transformation">
+                            </a>
+                         </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
 	<div id="temp"></div>
+
+
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.14.0/build/stlite.js"></script>
     <script>
@@ -556,6 +600,7 @@ else:
 st.write("")
 expander_bar = st.expander('About this app')
 expander_bar.markdown('''
+- **App Source**: Here is the link to the original Streamlit app which is faster than the copy on this website:   https://gps-time-converter.streamlit.app
 - **UTC**: UTC (Coordinated Universal Time) is the primary time standard by which the world regulates clocks and time. Local times have their appropriate UTC offsets according to timezones.
 - **Local Time**: The Local time can be shown if the correct timezone is selected. Timezones can be selected from a list of all common and currently used time zones which are derived from the Python module **pytz** - https://pypi.org/project/pytz/
 - **Leap seconds:**  To keep UTC synchronised with the Earth’s rotation, additional leap seconds are added or subtracted from time to time. Leap seconds are applied either on 31-December or 30-June. The last leap second was added on 31-December-2016 23:59:60.   https://maia.usno.navy.mil/products/leap-second
