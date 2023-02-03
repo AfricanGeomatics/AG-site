@@ -730,6 +730,15 @@ hr{
 #downloads-services:hover{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),  url('../images/cadastral/rtk_base.jpg');
 }
+/*gps time converter--------------------------------------------*/
+#links-gps-converter-img{
+	max-width: 500px;
+	margin:auto;
+	border: 1px solid #1d2b3a;
+	border-color:#324b65;
+}
+
+
 
 /*about--------------------------------------------*/
 
