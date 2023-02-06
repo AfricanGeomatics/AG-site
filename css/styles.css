@@ -501,7 +501,7 @@ hr{
 
 /*different card settings*/
 
-#index_services{/*card services overview*/
+#index-services{/*card services overview*/
 	min-height: 250px;
 
 }
@@ -510,7 +510,7 @@ hr{
 	}
 
 #index-gps-converter-img{
-	max-width: 450px;
+	max-width: 600px;
 	margin:auto;
 	border: 1px solid #1d2b3a;
 	border-color:#324b65;
@@ -522,7 +522,7 @@ hr{
 	border: 1px solid #1d2b3a;
 	border-color:#324b65;
 }
-#index_about{/*card about overview*/
+#index-about{/*card about overview*/
 	max-width:600px;
 	margin:auto;
 	min-height: 250px;
@@ -561,7 +561,7 @@ hr{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('../images/geodetic/geodetic_point2.jpg');
 }*/
 
-#index_projects{
+#index-projects{
 	background-image:url('../images/project_kunene/kunene1.jpg');
 	background-position: center;
 	overflow:hidden;
@@ -731,6 +731,13 @@ hr{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),  url('../images/cadastral/rtk_base.jpg');
 }
 /*gps time converter--------------------------------------------*/
+#links-gps-converter-card{
+	max-width: 650px;
+    margin:auto;
+	min-height: 250px;
+}	
+
+
 #links-gps-converter-img{
 	max-width: 650px;
 	margin:auto;
