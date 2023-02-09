@@ -731,6 +731,11 @@ hr{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),  url('../images/cadastral/rtk_base.jpg');
 }
 /*gps time converter--------------------------------------------*/
+#text-gps-converter{
+	max-width: 650px;
+    margin:auto;
+}	
+
 #links-gps-converter-card{
 	max-width: 650px;
     margin:auto;
@@ -1218,5 +1223,8 @@ svg{
 	}
 	#index-about-image{
 		max-height: 400px;
+	}
+	#text-gps-converter{
+		padding-left: 1rem;
 	}
 }
