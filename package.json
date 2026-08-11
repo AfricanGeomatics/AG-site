@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "serve-static": "^2.2.1"
+  }
+}

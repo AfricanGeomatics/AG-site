@@ -26,16 +26,16 @@ module.exports = {
     "watchOptions": {
         "ignoreInitial": true
     },
+    /*"server": false,*/
     "server": true,
+    "serveStatic": ["."],
+    "serveStaticOptions": {
+        "extensions": ["html"]
+    },
     "proxy": false,
     "port": 3000,
     "middleware": false,
     /*"serveStatic": [],*/
-    "serveStatic": ['.'],
-    "serveStaticOptions": {
-        "extensions": ['html']
-    },
-        
     "ghostMode": {
         "clicks": true,
         "scroll": true,
@@ -55,7 +55,6 @@ module.exports = {
     "open": "local",
     "browser": "default",
     "cors": false,
-    "xip": false,
     "hostnameSuffix": false,
     "reloadOnRestart": false,
     "notify": true,
