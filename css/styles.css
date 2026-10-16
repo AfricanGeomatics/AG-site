@@ -775,7 +775,7 @@ hr{
 }*/
 
 #index-mapping{
-	background-image:url('../images/mapping/gis9.jpg');
+	background-image:url('../images/mapping/farmmap.jpg');
 	}
 /*#index-mapping:hover{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('../images/mapping/gis9.jpg');
@@ -1402,6 +1402,16 @@ svg{
 	h1{
 		font-size: 1.7rem;
 	}
+	
+	/* on this screen size contact card needs to be shorter to fit meighbouring services card*/
+	#index-contact h2 {
+        font-size: 1rem;
+    }
+	#index-contact .title-top{
+	margin-bottom: .0rem;
+	font-size:.7rem;
+	}
+    
 	.card-img-radius-sm-left{
 		border-top-left-radius: 4px;
 	    border-top-right-radius: 0;
@@ -1449,6 +1459,7 @@ svg{
 	}
 }
 
+
 @media (min-width:660px) and (max-width:767px){
 	
 	.navbar-dark .navbar-nav .nav-link {
@@ -1494,11 +1505,8 @@ svg{
         width: auto;
         max-width: 100%;
         object-fit: contain;
-}
-
 	}
-
-
+}
 
 @media (min-width:576px) and (max-width:659px){
 
