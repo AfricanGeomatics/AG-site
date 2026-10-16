@@ -80,269 +80,386 @@
 	</nav>
 
 			
+	
+<!-- Namibian Map Systems: page introduction -->
+
+
+
+
 	<div>
 		<div class="container text-center mt-4">
 			<div class="container text-center mb-5">
 			    <p class="title-top">African Geomatics</p>
 				<hr class="hr-bottom-100 solid">
 			    <h1>Namibian Map Systems</h1>
-			    
+				<p class="text-left text-lg-center"> A practical reference to Namibia's coordinate reference systems, map projections, datum transformations and vertical datum.
+				</p>
 			</div>
-			
-            	
-			<h3 class="mb-4"> New Namibian Map System</h3>
+			<nav class="namibian-systems-nav mb-5" aria-label="On this page">
+        		<a href="#new-map-system" class="namibian-system-card">
+            		<span class="namibian-system-icon" aria-hidden="true"><i data-lucide="globe"></i></span>
+            		<span class="namibian-system-card-title">New Map System</span>
+            		<span class="namibian-system-card-description">
+                		WGS84 &middot; Transverse Mercator
+            		</span>
+        		</a>
+        		<a href="#old-map-system" class="namibian-system-card">
+            		<span class="namibian-system-icon" aria-hidden="true"><i data-lucide="map"></i></span>
+            		<span class="namibian-system-card-title">Old Map System</span>
+            		<span class="namibian-system-card-description">
+                		Schwarzeck &middot; Cadastral system
+            		</span>
+        		</a>
+        		<a href="#datum-conversion" class="namibian-system-card">
+            		<span class="namibian-system-icon" aria-hidden="true"><i data-lucide="arrow-left-right"></i></span>
+            		<span class="namibian-system-card-title">Datum Conversion</span>
+            		<span class="namibian-system-card-description">
+                		Parameters and tools
+            		</span>
+        		</a>
+        		<a href="#vertical-datum" class="namibian-system-card">
+            		<span class="namibian-system-icon" aria-hidden="true"><i data-lucide="mountain"></i></span>
+            		<span class="namibian-system-card-title">Vertical Datum</span>
+            		<span class="namibian-system-card-description">
+                		MSL, Normal Null and levelling
+            		</span>
+        		</a>
+    		</nav>
+    		
+		
+			<section id="new-map-system" >
+				<div class="card card-shadow text-center mb-5">
+					<div class="card-body">
+						<h3> New Namibian Map System</h3>
+						<hr class="hr-bottom solid mb-3">
+						<div class="row row-cols-1 row-cols-md-2">
+							<div class="col mb-2">
+								<p class="text-left">
+									The current reference datum for new maps in Namibia
+                        			is the World Geodetic System 1984 (WGS84).
+                    			</p>
+                    			<p class="text-left">
+                        			The specifications are set out in
+                        			<a class="a-blue-line"
+                           			href="http://www.lac.org.na/laws/2016/6145.pdf"
+                           			target="_blank"
+                           			rel="noopener noreferrer">
+                            		Government Gazette No. 6145, 7 October 2016
+                        			</a>.
+                    			</p>
+
+                    			<p class="text-left">
+                        			Section 8.1.3 specifies WGS84 as the horizontal datum
+                        			for all new digital orthoimagery and vector data.
+                        			Section 8.2.2 specifies a modified Transverse
+                        			Mercator projection.
+                    			</p>
+							</div>
+							
+
+							<div class="col mb-2">
+								<div class="info-card card-border p-3">
+					  				<h5 class="mb-3">Projection Parameters</h5>
+					  				<table class="table table-borderless text-left mb-0">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Projection</th>
+                                    <td>Transverse Mercator</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Central Meridian</th>
+                                    <td>17° E</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Latitude of Origin</th>
+                                    <td>0°</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">False Easting</th>
+                                    <td>600,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">False Northing</th>
+                                    <td>10,000,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Scale Factor</th>
+                                    <td>1.0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Linear Unit</th>
+                                    <td>Metre</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Geodetic Datum</th>
+                                    <td>WGS84</td>
+                                </tr>
+                            </tbody>
+                        </table>
+				    			</div>
+                			</div>
+            			</div>	
+            		</div>
+    			</div> 
+    		</section>
+
 				
-			<div class="row row-cols-1 row-cols-md-2">
+			<section id="old-map-system" >
+				<div class="card card-shadow text-center mb-5">
+					<div class="card-body">
+						<h3 > Old Namibian Map System and Cadastral Datum</h3>
+						<hr class="hr-bottom solid mb-3">
+						<div class="row row-cols-1 row-cols-md-2">
+	            			<div class="col mb-2">
+ 								<p class="text-left">
+                				Older topographical maps in Namibia, as well as the official
+                				cadastral system, are based on the Schwarzeck Datum. <br>
+                				The	Schwarzeck Datum uses the Bessel 1841 spheroid and the German Legal Metre (GLm) instead of the International Metre (m): 1 GLm = 1.0000135965 m.
+            					</p>
 
-				<div class="col mb-2">
-					<p class="text-left">
-The current reference datum of new maps in Namibia is the WGS84 geodetic datum.<br>
-Specifications are given in <a class="a-blue-line" href="http://www.lac.org.na/laws/2016/6145.pdf" target="_blank">Government Gazette No. 6145 (7 October 2016)</a>:<br>
-Section 8.1.3: 'The World Geodetic System 1984 (WGS84) datum shall be used as the horizontal datum for all new digital orthoimagery and all vector data.'<br>
-Section 8.2.2 specifies the recommended projection as a modified Transverse Mercator. 
-					</p>
-				</div>
-								
-				<div class="col mb-5">
-					<div class="info-card card-border">
+            					<p class="text-left">
+                				The projection used on older topographical maps and in the
+                				cadastral system is a south-oriented Transverse Mercator
+                				projection with two-degree panels.
+            					</p>
 
-					  <table class="table table-borderless text-left">
-				  
-					  <tbody>
-					    <tr>
-					      <th scope="row">Projection:</th>
-					      <td>Transverse Mercator</td>
-					    </tr>
-					    <tr>
-					      <th scope="row">Central Meridian:</th>
-					      <td>17 E</td>
-					    </tr>
-					    <tr>
-					      <th scope="row">Latitude of Origin:</th>
-					      <td>0</td>
-					    </tr>
-					    <tr>
-					      <th scope="row">False Easting:</th>
-					      <td>600 000</td>
-					    </tr>
-					    <tr>
-					      <th scope="row">False Northing:</th>
-					      <td>10 000 000</td>
-					    </tr>
-					    <tr>
-					      <th scope="row">Scale Factor:</th>
-					      <td>1</td>
-					    </tr>
-					    <tr>
-					      <th scope="row">Unit:</th>
-					      <td>Meter</td>
-					    </tr>
-					    <tr>
-					      <th scope="row">Geodetic Datum:</th>
-					      <td>WGS84</td>
-					    </tr>
-					  </tbody>
-					  </table>
-				    </div>
-                </div>
-            </div>
-            
-
-			<section id="old-namibian-map-system">
-
-				<h3 class="mb-4"> Old Namibian Map System</h3>
-					
-				<div class="row row-cols-1 row-cols-md-2">
-
-	            	<div class="col mb-2">
-	            	
-
-						<p class= "text-left">
-Older topographical maps in Namibia, as well as the official cadastral system are based on the Schwarzeck Datum. <br>The Schwarzeck datum is based on the Bessel 1841 spheroid and uses the German Legal meter instead of the International meter (1 GLm = 1.0000135965 Im).<br>
-The projection on these older topographical maps is a Transverse Mercator projection with two-degree panels:
-						</p>
-	            	</div>
-
-					<div class="col mb-3">
-
-						<div class="info-card card-border mb-3">
-						  <table class="table table-borderless text-left">
-						  
-						  <tbody>
-						    <tr>
-						      <th scope="row">Projection:</th>
-						      <td>Transverse Mercator South-Orientated</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">Central Meridian:</th>
-						      <td>11,13,15,17,19,21,23 or 25 E</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">Latitude of Origin:</th>
-						      <td>22 S</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">False Easting:</th>
-						      <td>0</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">False Northing:</th>
-						      <td>0</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">Scale Factor:</th>
-						      <td>1</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">Unit:</th>
-						      <td>German Legal Meter</td>
-						    </tr>
-						    <tr>
-						      <th scope="row">Geodetic Datum:</th>
-						      <td>Schwarzeck</td>
-						    </tr>
-						  </tbody>
-						  </table>
+	            			</div>
+							<div class="col mb-3">
+								<div class="info-card card-border p-3">
+                        			<h5 class="mb-3">Projection Parameters</h5>
+			                        <table class="table table-borderless text-left mb-0">
+			                            <tbody>
+			                                <tr>
+			                                    <th scope="row">Projection</th>
+			                                    <td>Transverse Mercator, south-oriented</td>
+			                                </tr>
+			                                <tr>
+			                                    <th scope="row">Central Meridian</th>
+			                                    <td>11°, 13°, 15°, 17°, 19°, 21°, 23° or 25° E</td>
+			                                </tr>
+			                                <tr>
+			                                    <th scope="row">Latitude of Origin</th>
+			                                    <td>22° S</td>
+			                                </tr>
+			                                <tr>
+			                                    <th scope="row">False Easting</th>
+			                                    <td>0</td>
+			                                </tr>
+			                                <tr>
+			                                    <th scope="row">False Northing</th>
+			                                    <td>0</td>
+			                                </tr>
+			                                <tr>
+			                                    <th scope="row">Scale Factor</th>
+			                                    <td>1.0</td>
+			                                </tr>
+			                                <tr>
+			                                    <th scope="row">Linear Unit</th>
+			                                    <td>German Legal Metre</td>
+			                                </tr>
+			                                <tr>
+			                                    <th scope="row">Geodetic Datum</th>
+			                                    <td>Schwarzeck</td>
+			                                </tr>
+			                            </tbody>
+			                        </table>
+			                    </div>
+							</div>
 						</div>
+						<div class="mb-4">
+    					
+                    		<p class="text-left">
+ 							The coordinate reference systems used for Namibia's two-degree map panels are documented in the EPSG Geodetic Parameter Dataset.<br>
+							The EPSG codes below provide links to the corresponding system definitions on <a class="a-blue-line" href="https://epsg.io/" target="_blank" rel="noopener noreferrer">EPSG.io</a>:
+	                   		</p>
+
+							<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+	            			<div class="col">
+								<p class="text-left mb-0">
+								Schwarzeck Datum: <a class="a-blue-line" href="https://epsg.io/4293" target="_blank" rel="noopener noreferrer">EPSG:4293</a><br>
+								Schwarzeck / Lo22/11: <a class="a-blue-line" href="https://epsg.io/29371" target="_blank" rel="noopener noreferrer">EPSG:29371</a><br>
+								Schwarzeck / Lo22/13: <a class="a-blue-line" href="https://epsg.io/29373" target="_blank" rel="noopener noreferrer">EPSG:29373</a><br>
+								Schwarzeck / Lo22/15: <a class="a-blue-line" href="https://epsg.io/29375" target="_blank" rel="noopener noreferrer">EPSG:29375</a><br>
+								Schwarzeck / Lo22/17: <a class="a-blue-line" href="https://epsg.io/29377" target="_blank" rel="noopener noreferrer">EPSG:29377</a>
+								</p>
+							</div>
+							<div class="col">
+								<p class="text-left mb-0">
+								Schwarzeck / Lo22/19: <a class="a-blue-line" href="https://epsg.io/29379" target="_blank" rel="noopener noreferrer">EPSG:29379</a><br>
+								Schwarzeck / Lo22/21: <a class="a-blue-line" href="https://epsg.io/29381" target="_blank" rel="noopener noreferrer">EPSG:29381</a><br>
+								Schwarzeck / Lo22/23: <a class="a-blue-line" href="https://epsg.io/29383" target="_blank" rel="noopener noreferrer">EPSG:29383</a><br>
+								Schwarzeck / Lo22/25: <a class="a-blue-line" href="https://epsg.io/29385" target="_blank" rel="noopener noreferrer">EPSG:29385</a>
+								</p>
+							</div>
+							</div>
+						</div>
+						<p class="text-left">
+			                <strong>Note:</strong> Some GIS and CAD applications do not
+			                support south-oriented projections. In such cases,
+			                coordinates may be sign-reversed and used with a
+			                north-oriented Transverse Mercator projection. The German
+			                Legal Metre may also be replaced by the International Metre
+			                using a scale factor of 0.9999864037. 
+			            </p>
+			            <p class="text-left">
+			                The effect of the German Legal Metre is small over local
+			                distances (14 mm over 1,000 m). Surveyors
+			                generally account for this difference by incorporating it
+			                into a scale factor. Over larger distances, the effect
+			                becomes more significant, particularly farther from the
+			                latitude of origin at 22° S. It can reach approximately
+			                7.5 m in the north and 10 m in the south of Namibia.
+			            </p>
+			            <h5>Older Local Cadastral Survey Systems</h5>
+			            <p class="text-left">
+			                Before the official introduction of the projection described
+			                above in the 1950s and 1960s, longitude origins of 15° E or
+			                18° E were also used. These are generally referred to on
+			                cadastral documents as preliminary systems, for example
+			                <em>Lo.22/15 Prelim</em> and <em>Lo.22/18 Prelim</em>.
+			            </p>
+			            <p class="text-left mb-0">
+			                Various other local cadastral survey systems were established
+			                before the official Schwarzeck system covered the whole
+			                country. Examples include the Base North (V) System in
+			                northern Namibia, the Schwarzrand System in south-western
+			                Namibia, the Kaiser-Wilhelm-Berg System around Windhoek,
+			                and the Uitdraai System east of Otjimbingwe. These systems
+			                can still be encountered on older farm diagrams and general
+			                plans.
+			            </p>
 					</div>
 				</div>
-
-				<div class="mb-4">
-					<p class="text-left">
-The projections for the different two-degree panels are included in the EPSG Geodetic Parameter Dataset, a collection of definitions of coordinate reference systems and coordinate transformations.
-EPSG projection files are available at EPSG.io: </p>
-					<div class="row row-cols-1 row-cols-md-2 mb-3">
-
-	            		<div class="col">
-
-							<p class="text-left mb-0">
-Schwarzeck Datum: <a class="a-blue-line" href="https://epsg.io/4293" target="_blank">EPSG4293</a><br>
-Schwarzeck / Lo22/11: <a class="a-blue-line" href="https://epsg.io/29371" target="_blank">EPSG29371</a><br>
-Schwarzeck / Lo22/13: <a class="a-blue-line" href="https://epsg.io/29373" target="_blank">EPSG29373</a><br>
-Schwarzeck / Lo22/15: <a class="a-blue-line" href="https://epsg.io/29375" target="_blank">EPSG29375</a><br>
-Schwarzeck / Lo22/17: <a class="a-blue-line" href="https://epsg.io/29377" target="_blank">EPSG29377</a>
-							</p>
-						</div>
-						<div class="col">
-						<p class="text-left mb-0">
-Schwarzeck / Lo22/19: <a class="a-blue-line" href="https://epsg.io/29379" target="_blank">EPSG29379</a><br>
-Schwarzeck / Lo22/21: <a class="a-blue-line" href="https://epsg.io/29381" target="_blank">EPSG29381</a><br>
-Schwarzeck / Lo22/23: <a class="a-blue-line" href="https://epsg.io/29383" target="_blank">EPSG29383</a><br>
-Schwarzeck / Lo22/25: <a class="a-blue-line" href="https://epsg.io/29385" target="_blank">EPSG29385</a>
-							</p>
-						</div>
-					</div>
-
-					<p class="text-left">
-To cope with some GIS or CAD programs that cannot handle the south-orientated projection the coordinates are sometimes just multiplied by (-1) and used with a normal north-oriented transverse mercator projection.
-For the same reason, instead of using the Germal Legal Meter as unit the normal international meter can be used with a scale factor of 1/GLM =0.9999864037.
-					</p>
-
-				</div>
-
 			</section>
-			
-			<div class="mb-4">
-				<h3 class="mb-3"> Datum Conversion</h3>
-				
-				<div class="row row-cols-1 row-cols-lg-2">
 
-	            	<div class="col mb-3">
-	            		<p class="text-left">
-Datum transformation parameters from Schwarzeck to WGS84 datum are only accurate to 30m countrywide.<br>
-Generally used parameters consist of only a translation/shift and no rotation and no scale factor.<br>
-Parameters are available from:
+
+			<section id="datum-conversion">
+				<div class="card card-shadow text-center mb-5">
+					<div class="card-body">
+						<h3> Datum Conversion</h3>
+						<hr class="hr-bottom solid">
+						<div class="row row-cols-1 row-cols-lg-2">
+		           			<div class="col mb-3">
+	            				<p class="text-left">
+	            					Datum transformation parameters from the Schwarzeck datum to WGS84 have a countrywide accuracy of approximately 30 m.<br>
+									Commonly used parameters consist of a translation (shift) only, with no rotation or scale factor.<br>
+									The following parameters are available from:
+								</p>
+	            				<ul class="text-left">
+									<li>DMA (US Defense Mapping Agency)  -  <a class="a-blue-line" href="https://epsg.io/1226" target="_blank" rel="noopener noreferrer">EPSG:1226</a>
+									<p class="card-text-small">			From Schwarzeck to WGS84: DX: 616 DY: 97 DZ: -251<br> 
+									From WGS84 to Schwarzeck: DX: -616 DY: -97 DZ: 251</p>
+									</li>
+									<li>Chief Directorate Surveys and Land Information; Mowbray; South Africa  -  <a class="a-blue-line" href="https://epsg.io/1271" target="_blank" rel="noopener noreferrer">EPSG:1271</a>
+									<p class="card-text-small">
+									From Schwarzeck to WGS84: DX: 615.64 DY: 102.08 DZ -255.81<br> 
+									From WGS84 to Schwarzeck: DX: -615.64 DY -102.08 DZ 255.81</p></li>
+									<li>Dr Charles Merry (UCT - University of Cape Town)
+									<p class="card-text-small"> From Schwarzeck to WGS84: DX: 616.8 DY: 103.3 DZ: -256.9<br>From WGS84 to Schwarzeck: DX: -616.8 DY: -103.3 DZ: 256.9</p></li>
+								</ul>
+							</div>
+		            		<div class="col mb-3">
+		            			
+								<p class="text-left">
+			                        Use the free
+			                        <a class="a-blue-line"
+			                           href="https://schwarzeck-transformation.streamlitapp.com/"
+			                           target="_blank"
+			                           rel="noopener noreferrer">
+			                            Schwarzeck Transformation App
+			                        </a>
+			                        to transform between different coordinate
+			                        systems in the WGS84 and the Schwarzeck datum:
+			                    </p>
+		            			
+								<div id="img-schwarzeck-transformation">
+									<a class="a-blue-line" href="https://schwarzeck-transformation.streamlitapp.com/" target="_blank" data-toggle="tooltip" title="Click to open transformation app">
+						  			<img src="./images/cadastral/schwarzeck_transformation.jpg" class="info-card-img" alt="Schwarzeck-WGS84 Transformation">
+						  			</a>
+						 		</div>
+							</div>
+						</div>
+						
+						<p class="text-left">
+    					Local transformation parameters vary by region, with an RMS of
+    					about 1.5 m, for example in the north-western region (see
+    					<a class="a-blue-line" href="./projects#projects-transformation-parameters" target="_blank">
+        				Projects – Transformation Parameters
+    					</a>),
+    					and about 0.3 m in the central area.
 						</p>
-	            		<ul class="text-left">
-<li>DMA (US Defense Mapping Agency)  -  <a class="a-blue-line" href="https://epsg.io/1226" target="_blank">EPSG 1226</a>
-<p class="card-text-small">			From Schwarzeck to WGS84: DX: 616 DY: 97 DZ: -251<br> 
-From WGS84 to Schwarzeck: DX: -616 DY: -97 DZ: 251</p>
-</li>
-<li>Chief Directorate Surveys and Land Information; Mowbray; South Africa  -  <a class="a-blue-line" href="https://epsg.io/1271" target="_blank">EPSG1271</a>
-	<p class="card-text-small">
-From Schwarzeck to WGS84: DX: 615.64 DY: 102.08 DZ -255.81<br> 
-From WGS84 to Schwarzeck: DX: -615.64 DY -102.08 DZ 255.81</p></li>
-<li>Dr Charles Merry (UCT - University of Cape Town)
-<p class="card-text-small"> From Schwarzeck to WGS84: DX: 616.8 DY: 103.3 DZ: -256.9<br>From WGS84 to Schwarzeck: DX: -616.8 DY: -103.3 DZ: 256.9</p></li>
-						</ul>
-					</div>
-
-		            <div class="col mb-3">
-		            	<p class="text-left">
-		A free app to transform between different coordinate system in the WGS84 and the Schwarzeck datum is available <a class="a-blue-line" href="https://schwarzeck-transformation.streamlitapp.com/" target="_blank"> here:</a>
-						</p>
-				
-						<div id="img-schwarzeck-transformation">
-							<a class="a-blue-line" href="https://schwarzeck-transformation.streamlitapp.com/" target="_blank" data-toggle="tooltip" title="Click to open transformation app">
-						  		<img src="./images/cadastral/schwarzeck_transformation.jpg" class="info-card-img" alt="Schwarzeck-WGS84 Transformation">
-						  	</a>
-						 </div>
 					</div>
 				</div>
+			</section>
 
-				<p class="text-left">
-	Local transformation parameters vary according to the region with a RMS of about 1.5m for example the north-eastern region <a class="a-blue-line" href="./projects#projects-transformation-parameters" target="_blank"> (see Projects - Transformation Parameters)</a> and a RMS of about 0.3m in the central area.
-				</p>
 
-			</div>
+			<section id="vertical-datum" >
+				<div class="card card-shadow text-center mb-5">
+					<div class="card-body">
+						<h3> Namibian Vertical Datum</h3>
+						<hr class="hr-bottom solid">
+						<div class="row row-cols-1 row-cols-md-2 mb-2">
+          					<div class="col">
+		            			<p class="text-left">
+		                        The vertical datum in Namibia is based on heights
+		                        above Mean Sea Level (MSL). Most published heights
+		                        of trigonometrical beacons were determined by
+		                        trigonometrical levelling and are given to the
+		                        nearest metre or to one decimal place.
+		                    	</p>
+			                    <p class="text-left">
+			                        More accurate heights are available in certain
+			                        areas where precise levelling has been carried out.
+			                        Benchmarks are located at approximately one-mile
+			                        intervals along these levelling routes. The map
+			                        shows the routes for which precise heights can be
+			                        obtained from the Surveyor-General's Office
+			                        in Windhoek.
+			                    </p>
+		            			<div class="info-card card-border p-3 text-left d-none d-lg-block">
+					                <h5>Windhoek: Normal Null (NN) Datum</h5>
+					                <p class="mb-2">
+					                    In Windhoek, a different levelling datum is used,
+					                    known as the Normal Null (NN) datum. The conversion
+					                    between Mean Sea Level (MSL) and Normal Null is:
+					                </p>
+					                <p class="mb-0">
+					                    MSL = NN − 3.475 m<br>
+					                    NN = MSL + 3.475 m
+					                </p>
+					            </div>
+									
+							</div>
+							<div class="col mb-3">
+								<div id="img-level-routes">
+				  					<img src="./images/cadastral/level_routes.jpg" class="info-card-img" alt="Old Level Routes in Namibia">
+				 				</div>
+							</div>
+								
+								
+						</div>
+						<div class="info-card card-border p-3 text-left col-md-12 d-block d-lg-none">
+			                <h5>Windhoek: Normal Null (NN) Datum</h5>
+
+			                <p class="mb-2">
+			                    In Windhoek, a different levelling datum is used,
+			                    known as the Normal Null (NN) datum. The conversion
+			                    between Mean Sea Level (MSL) and Normal Null is:
+			                </p>
+
+			                <p class="mb-0">
+			                    MSL = NN − 3.475 m<br>
+			                    NN = MSL + 3.475 m
+			                </p>
+					    </div>
+					</div>
+				</div>
+			</section>
 
 			
 
-			<div class="mb-4">
-				<h3 class="mb-3"> Namibian Cadastral Survey Datum</h3>
 
-	            <p class= "text-left">
-	The Namibian Cadastral Survey Datum is the same as the older map system and is generally known as the Schwarzeck datum. It is based on the Bessel 1841 spheroid and uses the German Legal meter instead of the International meter (1 GLm = 1.0000135965 Im). <br>
-	The projection is a south-orientated Transverse Mercator projection with two-degree panels as listed in the table above.<br>
-	The effect of the GLM is very small for local areas (14mm over 1000m) and is usually taken into account by surveyors by including it into a scale factor. The effect is the largest for projected coordinates with large distances from the latitude of origin (22 S), with an effect of up to 7.5m in the north and 10m in the south of Namibia.
-	            </p>
-
-
-				<p class="text-left">
-	Prior to the official introduction of the above projection in the 1950's and 1960's, the longitude of origin was either 15 or 18 E. On most cadatral documents these are general referred to as preliminary system and are annotated as Lo.22/15 Prelim or Lo.22/18 Prelim.
-	There are however numerous other cadastral survey system present in Namibia. These systems can typically be seen on some of the older cadastral farm diagrams, but also on some of the older general plans. Most of these are local systems that were established before the official Schwarzeck system covered the whole country. Some of these systems are the 'Base North (V) System' in northern Namibia, the 'Schwarzrand System' in South-western Namibia, the 'Kaiser-Wilhelm-Berg System' around Windhoek, as well as the 'Uitdraai System' east of Otjimbingwe.  
-
-				</p>
-
-            </div>
-
-        
-			<h3 class="mb-3"> Namibian Vertical Datum</h3>
-			<div class="row row-cols-1 row-cols-md-2 mb-4">
-
-            	<div class="col">
-            
-					
-
-		            <p class= "text-left">
-	The vertical datum in Namibia are heights above Mean Sea Level (MSL). Most published heights of trigonometrical beacons were determined by trigonometrical levelling and their heights are only given to a whole meter or to one decimal of a meter.
-	More accurate heights are available in certain areas where precise levelling has been carried out. Precise levelling routes are manifested by benchmarks at approximately 1 mile intervals along the levelling routes. The map shows the levelling routes for which precise heights can be obtained from the Surveyor-General’s office in Windhoek.   	</p>
-					<p class= "text-left d-md-none d-lg-block">
-	In Windhoek the levelling datum differs and is called the ‘Normal Null’ (NN) levelling datum. The conversion from the Mean Sea Level (MSL) datum to the Normal Null datum is as follows:<br>
-	MSL = NN - 3,475m, or<br>
-	NN = MSL + 3,475m
-
-					</p>
-				</div>
-				<div class="col mb-3">
-					<div id="img-level-routes">
-					  	<img src="./images/cadastral/level_routes.jpg" class="info-card-img" alt="Old Level Routes in Namibia">
-					 </div>
-				</div>
-
-			
-			
-				<div class="col-md-12 d-none d-md-block d-lg-none">
-					<p class="text-left">
-	In Windhoek the levelling datum differs and is called the ‘Normal Null’ (NN) levelling datum. The conversion from the Mean Sea Level (MSL) datum to the Normal Null datum is as follows:<br>
-	MSL = NN - 3,475m, or<br>
-	NN = MSL + 3,475m
-
-					</p>
-				</div>
-			</div>
 		</div>
-			
 	</div>
 	
 	<footer class="page-footer">
@@ -583,5 +700,9 @@ From WGS84 to Schwarzeck: DX: -615.64 DY -102.08 DZ 255.81</p></li>
 	<script src="js/bootstrap.min.js"></script>-->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
 </body>
 </html>

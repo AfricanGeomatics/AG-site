@@ -12,16 +12,40 @@ body{
 }
 
 h1,h2{
-	font-size: 1.5rem;
+	/*font-size: 1.5rem;*/
 	/*padding-left:3rem;
 	padding-right:3rem;*/
 }
+
+h1{
+	color: #324b65;
+    font-size: 2.15rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 12px;
+}
+
+h2{
+	font-size: 1.5rem;
+	color: #324b65;
+	font-weight: 700;
+	/*padding-left:3rem;
+	padding-right:3rem;*/
+}
+
 h3,h4{
+	color: #324b65;
+	font-weight: 700;
 	font-size:1.3rem;
 }
 
 h3.card-title{
 	color:white;
+}
+
+
+.link-card h4 {
+    color: black;
 }
 
 h5{
@@ -247,11 +271,12 @@ hr{
 .ag-intro-image {
     display: block;
     width: 100%;
-    max-width: 900px;
-    height: 280px;
+    max-width: 650px;
+    /*height: 320px;*/
     object-fit: cover;
     margin: 20px auto 2rem;
 }
+
 
 /*cards -----------------------------*/
 .card{
@@ -730,7 +755,7 @@ hr{
 }*/
 
 #index-topographical{
-	background-image:url('../images/topographic/topo_bike.jpg') ;
+	background-image:url('../images/topographic/topo4.jpg') ;
 }
 /*#index-topographical:hover{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('../images/topographic/topo_bike.jpg');
@@ -945,6 +970,98 @@ hr{
 #downloads-services:hover{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),  url('../images/cadastral/rtk_base.jpg');
 }
+
+
+/* Namibian Map Systems--------------------------------------------*/
+/* Namibian Map Systems - introduction */
+
+
+/* Quick-navigation cards */
+.namibian-systems-nav {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.namibian-system-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    min-height: 150px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #d9deea;
+    border-top: 3px solid #324b65;
+    border-radius: 4px;
+    color: #324b65;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+
+
+
+.namibian-system-card:hover,
+.namibian-system-card:focus {
+    background: #f4f6fa;
+    border-color: #aebbd0;
+    border-top-color: #f4b85a;
+    color: #24394e;
+    text-decoration: none !important;
+}
+
+.namibian-system-icon {
+    font-size: 1.65rem;
+    line-height: 1;
+    margin-bottom: 14px;
+}
+
+.namibian-system-card-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.namibian-system-card-description {
+    color: #5b6674;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive layout */
+@media (max-width: 991.98px) {
+    .namibian-systems-nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .namibian-systems-nav {
+        gap: 10px;
+    }
+
+    .namibian-system-card {
+        min-height: 155px;
+        padding: 15px;
+    }
+}
+
+/* Keep section headings visible after clicking navigation */
+#new-map-system,
+#old-map-system,
+#datum-conversion,
+#vertical-datum {
+    scroll-margin-top: 24px;
+}
+
+
+
+
+
+
 /*gps time converter--------------------------------------------*/
 #text-gps-converter{
 	max-width: 650px;
@@ -1381,7 +1498,7 @@ svg{
 
 	}
 
-}
+
 
 @media (min-width:576px) and (max-width:659px){
 
@@ -1496,6 +1613,9 @@ svg{
 	    float: none;
 	    margin-left:4.5rem;
 	    margin-top:-1.7rem;
+	}
+		h1{
+		font-size: 1.5rem;
 	}
 	#index-services-image{
 		max-height: 250px;
