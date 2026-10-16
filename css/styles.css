@@ -705,14 +705,18 @@ hr{
     padding-bottom: .5rem;
 }
 
-#index-map-system-image{
-		/*margin-top: -2rem;*/
-        height: 220px;
+/*#index-map-system-image{
+		
+        height: 400px;
         width: auto;
         max-width: 100%;
         object-fit: contain;
-	}
-
+	}*/
+#index-map-system-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 #index-gps-converter-img{
 	max-width: 600px;
 	margin:auto;
@@ -1499,13 +1503,13 @@ svg{
 	    border-bottom-left-radius: calc(.25rem - 1px);
 	    border-bottom-right-radius: 0;*/
 	}
-    #index-map-system-image{
+    /*#index-map-system-image{
         margin-top: -1rem;
         height: 220px;
         width: auto;
         max-width: 100%;
         object-fit: contain;
-	}
+	}*/
 }
 
 @media (min-width:576px) and (max-width:659px){
@@ -1553,14 +1557,14 @@ svg{
 	    border-bottom-left-radius: calc(.25rem - 1px);
 	    border-bottom-right-radius: 0;*/
 	}
-    #index-map-system-image{
+    /*#index-map-system-image{
 		margin-top: -2rem;
 		height: 220px;
         width: auto;
         max-width: 100%;
         object-fit: contain;
 
-	}
+	}*/
 
 }
 
@@ -1590,13 +1594,13 @@ svg{
 	#index-services-image{
 		max-height: 250px;
 	}
-	#index-map-system-image{
+	/*#index-map-system-image{
 		margin-top: -2rem;
 		height: 220px;
         width: auto;
         max-width: 100%;
         object-fit: contain;
-	}
+	}*/
 	#index-about-image{
 		max-height: 400px;
 	}
@@ -1628,13 +1632,13 @@ svg{
 	#index-services-image{
 		max-height: 250px;
 	}
-	#index-map-system-image{
+	/*#index-map-system-image{
 		margin-top: -2rem;
 		height: 220px;
         width: auto;
         max-width: 100%;
         object-fit: contain;
-    }
+    }*/
 	#index-about-image{
 		max-height: 400px;
 	}
