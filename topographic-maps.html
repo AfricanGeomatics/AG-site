@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="noindex, nofollow, noarchive">
+	<title>Topographic Maps of Southern Africa | African Geomatics</title>
+
+	<meta name="description" content="Explore historical topographic maps of Namibia, South Africa, Zimbabwe, Eswatini and Lesotho. View online maps or use XYZ tile services in QGIS and ArcGIS Pro.">
+	<link rel="canonical" href="https://www.africangeomatics.com/topographic-maps">
+	<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+	
+	<nav id="navbar" class="navbar sticky-top navbar-expand-sm navbar-dark py-1">
+		<div class="navbar-header">
+			<a href="./" class="float-left visible-md visible-lg">
+				<div id="logo-img"></div>
+			</a> 
+	    </div>
+		
+		<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto align-middle">
+				<li class="nav-item">
+					<a class="nav-link" href="./">Home</a>
+				</li>
+				<li class="nav-item dropdown">
+		        	<a class="nav-link" href="./services">Services</a>
+		        	<div class="dropdown-menu">
+          				<a class="dropdown-item" href="./cadastral">Cadastral Surveys</a>
+        				<a class="dropdown-item" href="./geodetic">Geodetic Surveys</a>
+        				<a class="dropdown-item" href="./uav">UAV Surveys</a>
+      					<a class="dropdown-item" href="./topographic">Topographical Surveys</a>
+        				<a class="dropdown-item" href="./engineering">Engineering Surveys</a>
+        				<a class="dropdown-item" href="./mapping">Mapping and GIS Services</a>
+        			</div>
+      			</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link" href="./projects">Projects</a>
+					<div class="dropdown-menu">
+          				<a class="dropdown-item" href="./projects#projects-itrf">ITRF for Namibia</a>
+        				<a class="dropdown-item" href="./projects#projects-neckartaldam">Neckartal Dam Project</a>
+      					<a class="dropdown-item" href="./projects#projects-kavango">Kavango Control Survey</a>
+      					<a class="dropdown-item" href="./projects#projects-osona">Osona Township</a>
+      					<a class="dropdown-item" href="./projects#projects-roads">Road Surveys</a>
+        				<a class="dropdown-item" href="./projects#projects-transformation-parameters">Transformation Parameters</a>
+        			</div>
+				</li>
+				<li class="nav-item dropdown">
+		        	<a class="nav-link" href="./links">Resources</a>
+		        	<div class="links_dropdown dropdown-menu" >
+          				<a class="dropdown-item" href="./namibian-map-system">Namibian Map Systems</a>
+          				<a class="dropdown-item" href="https://schwarzeck-transformation.streamlitapp.com/" target="_blank" rel="noopener noreferrer">Schwarzeck Transformation</a>
+          				<a class="dropdown-item" href="https://2d-helmert-transformation.streamlitapp.com/" target="_blank" rel="noopener noreferrer">2D Helmert Transformation</a>
+          				<!--comment
+          				<a class="dropdown-item" href="https://gps-time-converter.streamlitapp.com/" target="_blank">GPS Time Converter</a>-->
+          				<a class="dropdown-item" href="./gps-time-converter" target="_blank" rel="noopener noreferrer">GPS Time Converter</a>
+          				<a class="dropdown-item" href="./links">Acts and Regulations</a>
+          			</div>
+      			</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./about">About</a>
+				</li>  
+				<li class="nav-item">
+					<a class="nav-link" href="./contact">Contact</a>
+				</li>    
+			</ul>
+		</div>
+	</nav>
+
+			
+	
+	<div>
+		<div class="container text-center mt-4">
+			<div class="container text-center mb-4">
+			    <p class="title-top">African Geomatics</p>
+				<hr class="hr-bottom-100 solid">
+			    <h1>Topographic Maps of Southern Africa</h1>
+				<p class="text-left"> 
+
+					Thanks to <a class="a-blue-line"
+		                           href="https://www.openstreetmap.org/user/Firefishy"
+		                           target="_blank"
+		                           rel="noopener noreferrer">
+		                            Grant Slater
+			                    </a> 
+                    and the OpenStreetMap team, topographic maps covering several countries in Southern Africa are available as georeferenced online maps and XYZ tile services. You can view the maps in a web browser or add them as background layers in GIS software.<br>
+                    <a class="a-blue-line" href="#gis-instructions">Adding the XYZ tile services to GIS software</a>
+				</p>
+				<p class="text-left"> 
+				These maps help preserve historical geographic information and make it accessible to everyone. Most of the map sheets date from the 1960s to the 1990s, documenting the region's landscapes, settlements, infrastructure and other geographical features at the time of mapping.
+				</p>
+				
+				<!--The maps show towns, villages, roads, railways, rivers, farms, schools, mines, terrain, place names and many other geographical features from that period.
+				</p>-->
+			</div>
+			
+ 
+			<section>
+				<div class="card card-shadow text-center mb-5">
+					<div class="card-body">
+						<!-- Namibia ---------------------------->
+						<div class="row align-items-stretch mb-2">
+							<div class="col-lg-7 col-xl-8 mb-2">
+								<h4>Namibia Topographic Maps</h4>
+								<ul class="mb-2">
+						            <li>
+							            <p class="text-left mb-1">	
+	 								    <a class="a-blue-line text-left" href="https://namibia-topo.openstreetmap.org.za/" target="_blank" rel="noopener noreferrer"data-toggle="tooltip"
+								   title="Online Topographic Map Namibia">https://namibia-topo.openstreetmap.org.za/
+									    </a>
+										</p>	
+									</li>	
+						            		
+									<li>
+										<p class="text-left mb-1">
+								 		<strong>Topographic Maps 1:50,000</strong> (1958–1991)
+										</p>
+										<p class="card-text-small mb-2">
+											<strong >XYZ Tiles:</strong>
+											<span class="copy-text"
+											    data-toggle="tooltip" 
+												title="Copy"
+											    onclick="copyText(this)"
+											    data-copy="https://namibia-topo.openstreetmap.org.za/layer/na_sgswa_topo_50k/{z}/{x}/{y}.png">
+											    https://namibia-topo.openstreetmap.org.za/layer/<wbr>na_sgswa_topo_50k/<wbr>{z}/{x}/{y}.png
+											</span>
+											<span class="copy-feedback" aria-live="polite"></span>
+										</p>
+									</li>
+									<li>
+										<p class="text-left mb-1">
+									 		<strong>Topographic Maps 1:250,000</strong> (1972–1989)
+										</p>
+										<p class="card-text-small mb-2">
+											<strong>XYZ Tiles:</strong> 
+											<span class="copy-text"
+												data-toggle="tooltip" 
+												title="Copy"
+											    onclick="copyText(this)"
+											    data-copy="https://namibia-topo.openstreetmap.org.za/layer/na_sgswa_topo_250k/{z}/{x}/{y}.png">
+											    https://namibia-topo.openstreetmap.org.za/layer/<wbr>na_sgswa_topo_250k/<wbr>{z}/{x}/{y}.png
+											</span>
+											<span class="copy-feedback" aria-live="polite"></span>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-5 col-xl-4 mb-3">
+								<a href="https://namibia-topo.openstreetmap.org.za/"
+								   target="_blank"
+								   rel="noopener noreferrer"
+								   data-toggle="tooltip"
+								   title="Online Topographic Map Namibia">
+								    <img
+								        src="./images/topographic_maps/topo_namibia50k.jpg"
+								        class="topomap-img"
+								        alt="Online topographic map of Namibia">
+								</a>
+
+            				</div>
+            			</div>
+						
+
+            			<!-- Zimbabwe --------------------------->
+						<div class="row align-items-stretch mb-2">
+							<div class="col-lg-7 col-xl-8 mb-2">
+								<h4>Zimbabwe Topographic Maps</h4>
+								
+								<ul class="mb-2">
+									<li>
+										<p class="text-left mb-1">	
+								
+	 								    <a class="a-blue-line text-left" href="https://zimbabwe-topo.openstreetmap.org.za/" target="_blank" rel="noopener noreferrer"data-toggle="tooltip"
+								   title="Online Topographic Map Zimbabwe">https://zimbabwe-topo.openstreetmap.org.za/
+									    </a>
+										</p>
+									</li>
+									<li>
+										<p class="text-left mb-1">
+									 		<strong>Topographic Maps 1:50,000</strong> (1960–2000)
+										</p>
+										<p class="card-text-small mb-2">
+											<strong>XYZ Tiles:</strong>
+											<span class="copy-text"
+												data-toggle="tooltip" 
+												title="Copy"
+											     onclick="copyText(this)"
+											     data-copy="https://zimbabwe-topo.openstreetmap.org.za/layer/zw_topo_50k/{z}/{x}/{y}.png">
+											    https://zimbabwe-topo.openstreetmap.org.za/layer/<wbr>zw_topo_50k/<wbr>{z}/{x}/{y}.png
+											</span>
+											<span class="copy-feedback" aria-live="polite"></span>
+										</p>
+									</li>
+									<li>
+										<p class="text-left mb-1">
+									 		<strong>Topographic Maps 1:250,000</strong> (1975–1995)
+										</p>
+										<p class="card-text-small mb-2">
+											<strong>XYZ Tiles:</strong>
+											<span class="copy-text" 
+												data-toggle="tooltip" 
+												title="Copy"
+											    onclick="copyText(this)"
+											    data-copy="https://zimbabwe-topo.openstreetmap.org.za/layer/zw_topo_250k/{z}/{x}/{y}.png">
+											    https://zimbabwe-topo.openstreetmap.org.za/layer/<wbr>zw_topo_250k/<wbr>{z}/{x}/{y}.png
+											</span>
+											<span class="copy-feedback" aria-live="polite"></span>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-5 col-xl-4 mb-3">
+								<a href="https://zimbabwe-topo.openstreetmap.org.za/"
+						  			target="_blank"
+								   rel="noopener noreferrer"
+								   data-toggle="tooltip"
+								   title="Online Topographic Map Zimbabwe">
+				                    <img 
+				                        src="./images/topographic_maps/topo_zimbabwe50k.jpg"
+				                        class="topomap-img"
+				                         alt="Online topographic map of Zimbabwe">
+				                </a>	
+            				</div>	
+            			</div>
+ 
+            			<!-- Eswatini---------------------------->
+						<div class="row align-items-stretch mb-2">
+							<div class="col-lg-7 col-xl-8 mb-2">
+								<h4>Eswatini Topographic Maps</h4>
+								
+								<ul class="mb-2">
+									<li>
+										<p class="text-left mb-1">	
+								
+	 								    <a class="a-blue-line text-left" href="https://eswatini-topo.openstreetmap.org.za/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip"
+								   title="Online Topographic Map Eswatini">https://eswatini-topo.openstreetmap.org.za/
+									    </a>
+										</p>
+									</li>
+									<li>
+										<p class="text-left mb-1">
+									 		<strong>Topographic Maps 1:50,000</strong> (1969–1984)
+										</p>
+										<p class="card-text-small mb-1">
+											<strong>XYZ Tiles:</strong>
+											<span class="copy-text"
+												data-toggle="tooltip" 
+												title="Copy"
+											     onclick="copyText(this)"
+											     data-copy="https://eswatini-topo.openstreetmap.org.za/layer/sz_dos_topo_50k/{z}/{x}/{y}.png">
+											    https://eswatini-topo.openstreetmap.org.za/layer/<wbr>sz_dos_topo_50k/<wbr>{z}/{x}/{y}.png
+											</span>
+											<span class="copy-feedback" aria-live="polite"></span>
+										</p>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="col-lg-5 col-xl-4 mb-3">
+								<a href="https://eswatini-topo.openstreetmap.org.za/"
+						  			target="_blank"
+								   rel="noopener noreferrer"
+								   data-toggle="tooltip"
+								   title="Online Topographic Map Eswatini">
+				                    <img 
+				                        src="./images/topographic_maps/topo_eswatini50k.jpg"
+				                        class="topomap-img"
+				                         alt="Online topographic map of Eswatini">
+				                </a>	
+            				</div>	
+            			</div>
+
+						<!-- Lesotho  --------------------------->
+						<div class="row align-items-stretch mb-2">
+							<div class="col-lg-7 col-xl-8 mb-2">
+								<h4>Lesotho Topographic Maps</h4>
+								<ul class="mb-2">
+									<li>
+										<p class="text-left mb-1">	
+								
+	 								    <a class="a-blue-line text-left" href="https://lesotho-topo.openstreetmap.org.za/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip"
+								    title="Online Topographic Map Lesotho">https://lesotho-topo.openstreetmap.org.za/
+									    </a>
+										</p>
+									</li>
+									<li>
+										<p class="text-left mb-1">
+									 		<strong>Topographic Maps 1:50,000</strong> (1979–1982)
+										</p>
+										<p class="card-text-small mb-1">
+											<strong>XYZ Tiles:</strong>
+											<span class="copy-text"
+												data-toggle="tooltip" 
+												title="Copy"
+											     onclick="copyText(this)"
+											     data-copy="https://lesotho-topo.openstreetmap.org.za/layer/ls_topo_50k/{z}/{x}/{y}.png">
+											    https://lesotho-topo.openstreetmap.org.za/layer/<wbr>ls_topo_50k/<wbr>{z}/{x}/{y}.png
+											</span>
+											<span class="copy-feedback" aria-live="polite"></span>
+										</p>
+									</li>
+									
+								</ul>
+							</div>
+							<div class="col-lg-5 col-xl-4 mb-3">
+								<a href="https://lesotho-topo.openstreetmap.org.za/"
+						  		    target="_blank"
+								    rel="noopener noreferrer"
+								    data-toggle="tooltip"
+								    title="Online Topographic Map Lesotho">
+				                    <img 
+				                        src="./images/topographic_maps/topo_lesotho50k.jpg"
+				                        class="topomap-img"
+				                         alt="Online topographic map of Lesotho">
+				                </a>	
+            				</div>	
+            			</div>
+
+						<!-- South Africa ----------------------->
+						<div class="row align-items-stretch mb-2">
+							<div class="col-lg-7 col-xl-8 mb-2">
+								<h4>South Africa Topographic Maps</h4>
+								<ul class="mb-2">
+						            <li>
+							            <p class="text-left mb-1">	
+	 								    <a class="a-blue-line text-left" href="https://topo.openstreetmap.org.za/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" 
+								   title="Online Topographic Map South Africa">https://topo.openstreetmap.org.za/
+									    </a>
+										</p>	
+									</li>	
+						            		
+									<li>
+										<p class="text-left mb-1">
+								 		<strong>Topographic Maps 1:50,000</strong> (1996–2013)
+										</p>
+										<p class="card-text-small mb-2">
+											<strong>XYZ Tiles:</strong>
+											<span class="copy-text"
+											    data-toggle="tooltip" 
+												title="Copy"
+											    onclick="copyText(this)"
+											    data-copy="https://topo.openstreetmap.org.za/layer/za_ngi_topo_50k/{z}/{x}/{y}.png">
+											    https://topo.openstreetmap.org.za/layer/<wbr>za_ngi_topo_50k/<wbr>{z}/{x}/{y}.png
+											</span>
+											<span class="copy-feedback" aria-live="polite"></span>
+										</p>
+									</li>
+									<li>
+										<p class="text-left mb-1">
+									 		<strong>Topographic Maps 1:250,000</strong> (1996–2010)
+										</p>
+										<p class="card-text-small mb-2">
+											<strong>XYZ Tiles:</strong> 
+											<span class="copy-text"
+												data-toggle="tooltip" 
+												title="Copy"
+											    onclick="copyText(this)"
+											    data-copy="https://topo.openstreetmap.org.za/layer/za_ngi_topo_250k/{z}/{x}/{y}.png">
+											    https://topo.openstreetmap.org.za/layer/<wbr>za_ngi_topo_250k/<wbr>{z}/{x}/{y}.png
+											</span>
+											<span class="copy-feedback" aria-live="polite"></span>
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-5 col-xl-4 mb-3">
+								<a href="https://topo.openstreetmap.org.za/"
+					  			   target="_blank"
+								   rel="noopener noreferrer"
+								   data-toggle="tooltip" 
+								   title="Online Topographic Map South Africa">
+			                    <img 
+		                            src="./images/topographic_maps/topo_southafrica50k.jpg"
+		                            class="topomap-img"
+		                            alt="Online topographic map of South Africa">
+		                    	</a>	
+            				</div>
+            			</div>
+
+					<!-- Malawi ----------------------->
+						<div class="row align-items-stretch mb-2">
+							<div class="col-lg-7 col-xl-8 mb-2">
+								<h4>Malawi Topographic Maps</h4>
+								<p class="font-italic">Coming soon...</p>
+							</div>
+							<div class="col-lg-5 col-xl-4 mb-3">
+								
+            				</div>
+            			</div>
+
+            		</div>
+    			</div> 
+    		</section>
+
+			<section id="gis-instructions">
+			<div class="card card-shadow text-center mb-5">
+				<div class="card-body">
+					<h3 class="mb-3"> How to Add XYZ Tile Services in GIS Software</h3>
+					
+					<div class="row align-items-stretch">
+						<div class="col mb-2">
+							<h4>QGIS</h4>
+							<hr class="hr-bottom-100 solid">
+							<ol>
+					            <li>
+						            <p class="text-left card-text-small mb-1">	
+ 								    Open the Browser panel
+									</p>	
+								</li>	
+								<li>
+						            <p class="text-left card-text-small mb-1">	
+ 								    Under XYZ Tiles, click New Connection…
+									</p>
+									<img 
+	                            src="./images/topographic_maps/QGIS1.jpg"
+	                            class="gis-img-short mb-2"
+	                            alt="QGIS Browser panel showing the XYZ Tiles connection option">	
+								</li>
+								
+								<li>
+						            <p class="text-left card-text-small mb-1">	
+ 								    Paste the copied URL and enter a name for the connection
+									</p>	
+									<img
+									id="qgis2"
+			                            src="./images/topographic_maps/QGIS2.jpg"
+			                            class="info-card-img mb-2"
+			                            alt="QGIS dialog for configuring an XYZ tile connection">
+								</li>
+								<li>
+						            <p class="text-left card-text-small mb-1">	
+ 								    Add the layer to the project
+									</p>	
+								</li>			
+							</ol>
+						</div>
+
+						<div class="col mb-2">
+							<h4>ArcGIS Pro</h4>
+							<hr class="hr-bottom-100 solid">
+							<ol>
+					            <li>
+						            <p class="text-left card-text-small mb-1">	
+ 								    Select Add Data From Path
+									</p>	
+								</li>	
+								<li>
+						            <p class="text-left card-text-small mb-1">	
+ 								    Paste the copied URL
+									</p>	
+								</li>
+								<li>
+						            <p class="text-left card-text-small mb-1">	
+ 								    The tile service is added to the map as a layer
+									</p>
+								</li>		
+							</ol>
+							<img
+	                            id="arcgis1"
+	                            src="./images/topographic_maps/ArcGIS.jpg"
+	                            class="info-card-img mb-2"
+	                            alt="ArcGIS Pro adding a tile service from a URL">
+	                   </div>
+					</div>
+						
+        		</div>
+			</div> 
+		</section>			
+
+
+			
+
+
+		</div>
+	</div>
+	
+	<footer class="page-footer">
+		<div class="container text-md-left pt-4">
+			<div class="row">
+				
+
+				<section class="col-md-4 col-sm-6 col-xs-12 mb-4">
+					<h4>Contact Info</h4>
+					<div class="footer-contact-block">
+						<h5>African Geomatics</h5>
+						<div class="container">
+							<div class="row pb-1">
+								<div class="col-1 pl-0">
+	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt-fill" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+	</svg>
+								</div>
+								<div class="col-11">
+									<p>
+								3 Joseph Wood Street, Windhoek, Namibia</p>
+								</div>
+							</div>
+						</div>
+						<p>Contact us via phone or via email:</p>
+						<div class="container">
+							<div class="row pb-1">
+								<div class="col-1 pl-0">
+	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+	</svg>
+								</div>
+								<div class="col-11 mb-2">
+									<a id="footer-tel" href="tel:+26461236541" >+264 (0)61 236541</a>
+								</div>
+							</div>
+							<div class="row pb-1">
+								<div class="col-1 pl-0">
+	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+	</svg>
+								</div>
+								<div class="col-11">
+									<p class="mb-1">
+										<script type="text/javascript">
+										var part1 = "diether";
+										var part2 = Math.pow(2,6);
+										var part3 = String.fromCharCode(part2);
+										var part4 = "iway.na"
+										var part5 = part1 + String.fromCharCode(part2) + part4;
+										document.write("<a href=" + "mai" + "lto" + ":" + part5 + ">" + part1 + part3 + part4 + "</a>");
+										</script>
+									</p>
+									<p>
+										<script type="text/javascript">
+										var part1 = "wilkos";
+										var part2 = Math.pow(2,6);
+										var part3 = String.fromCharCode(part2);
+										var part4 = "iway.na"
+										var part5 = part1 + String.fromCharCode(part2) + part4;
+										document.write("<a href=" + "mai" + "lto" + ":" + part5 + ">" + part1 + part3 + part4 + "</a>");
+										</script>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+					
+				<section class="col-md-4 col-sm-6 col-xs-12 mb-4">
+					<h4>Map</h4>
+					<div class="map-container">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.202547987234!2d17.103496142824067!3d-22.57152658952307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c0b05a7a85b1ea1%3A0xda0324ef8744d6f7!2sAfrican%20Geomatics!5e0!3m2!1sen!2sna!4v1603790151560!5m2!1sen!2sna" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</section>
+
+
+				<section  class="col-md-4 col-sm-12 col-xs-12 pb-4">
+					<h4>Links</h4>
+					<div id="footer-links" class="container text-md-left">
+						
+						<div class="row pb-1">
+							<div class="col-1 pl-0">
+	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-globe" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4H2.255a7.025 7.025 0 0 1 3.072-2.472 6.7 6.7 0 0 0-.597.933c-.247.464-.462.98-.64 1.539zm-.582 3.5h-2.49c.062-.89.291-1.733.656-2.5H3.82a13.652 13.652 0 0 0-.312 2.5zM4.847 5H7.5v2.5H4.51A12.5 12.5 0 0 1 4.846 5zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5H7.5V11H4.847a12.5 12.5 0 0 1-.338-2.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12H7.5v2.923c-.67-.204-1.335-.82-1.887-1.855A7.97 7.97 0 0 1 5.145 12zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11H1.674a6.958 6.958 0 0 1-.656-2.5h2.49c.03.877.138 1.718.312 2.5zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12h2.355a7.967 7.967 0 0 1-.468 1.068c-.552 1.035-1.218 1.65-1.887 1.855V12zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5h-2.49A13.65 13.65 0 0 0 12.18 5h2.146c.365.767.594 1.61.656 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z"/>
+	</svg>
+							</div>
+							<div class="col-11 pl-2 pr-0">
+								<p class="mb-0"><a href="https://schwarzeck-transformation.streamlitapp.com/" target="_blank" rel="noopener noreferrer">Schwarzeck - WGS84 Transformation</a></p>
+							</div>
+						</div>
+						
+                        <div class="row pb-1">
+							<div class="col-1 pl-0">
+	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-globe" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4H2.255a7.025 7.025 0 0 1 3.072-2.472 6.7 6.7 0 0 0-.597.933c-.247.464-.462.98-.64 1.539zm-.582 3.5h-2.49c.062-.89.291-1.733.656-2.5H3.82a13.652 13.652 0 0 0-.312 2.5zM4.847 5H7.5v2.5H4.51A12.5 12.5 0 0 1 4.846 5zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5H7.5V11H4.847a12.5 12.5 0 0 1-.338-2.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12H7.5v2.923c-.67-.204-1.335-.82-1.887-1.855A7.97 7.97 0 0 1 5.145 12zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11H1.674a6.958 6.958 0 0 1-.656-2.5h2.49c.03.877.138 1.718.312 2.5zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12h2.355a7.967 7.967 0 0 1-.468 1.068c-.552 1.035-1.218 1.65-1.887 1.855V12zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5h-2.49A13.65 13.65 0 0 0 12.18 5h2.146c.365.767.594 1.61.656 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z"/>
+	</svg>
+							</div>
+							<div class="col-11 pl-2 pr-0">
+								<p class="mb-0"><a href="https://2d-helmert-transformation.streamlitapp.com/" target="_blank" rel="noopener noreferrer">2D Helmert Transformation</a></p>
+							</div>
+						</div>
+
+						<div class="row pb-1">
+							<div class="col-1 pl-0">
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+  	<path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+  	<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+	</svg>
+							</div>
+							<div class="col-11 pl-2 pr-0">
+								<p class="mb-0"><a href="https://gps-time-converter.streamlitapp.com/" target="_blank" rel="noopener noreferrer">GPS Time Converter</a></p>
+							</div>
+						</div>
+						
+						<div class="row pb-1">
+							<div class="col-1 pl-0">
+	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 8a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+	</svg>
+							</div>
+							<div class="col-11 pl-2 pr-0">
+								<p class="mb-0"><a href="./uploads/Land Survey Act 33 of 1993.pdf" target="_blank">Land Survey Act</a> and <a href="./uploads/Land Survey Regulations.pdf" target="_blank">Regulations</a>
+								</p>
+							</div>
+						</div>
+
+						
+						<div class="row pb-1">
+							<div class="col-1 pl-0">
+	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 8a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+	</svg>
+							</div>
+							<div class="col-11 pl-2 pr-0">
+								<p class="mb-0"><a href="./uploads/Sectional Title Act 2 of 2009.pdf" target="_blank">Sectional Title Act</a> and <a href="./uploads/Sectional Title Regulations.pdf" target="_blank">Regulations</a></p>
+							</div>
+						</div>
+
+						
+						<div class="row pb-1">
+							<div class="col-1 pl-0">
+	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 8a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+	</svg>
+							</div>
+							<div class="col-11 pl-2 pr-0">
+								<p class="mb-0"><a href="./uploads/Urban and Rural Planning Act 5 of 2018.pdf" target="_blank">Urban and Rural Planning Act</a> and <a href="./uploads/Urban and Rural Planning Regulations.pdf" target="_blank">Regulations</a></p>
+							</div>
+						</div>
+
+				
+						<div class="row pb-1">
+							<div class="col-1 pl-0">
+	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 8a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+	</svg>
+							</div>
+							<div class="col-11 pl-2 pr-0">
+								<p class="mb-0"><a href="./uploads/Flexible Land Tenure Act 4 of 2012.pdf" target="_blank">Flexible Land Tenure Act</a></p>
+							</div>
+						</div>
+
+						
+						<div class="row pb-1">
+							<div class="col-1 pl-0">
+	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-earmark-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm7.5 1.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 8a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+	</svg>
+							</div>
+							<div class="col-11 pl-2 pr-0">
+								<p class="mb-0"><a href="./uploads/SURCON Act 32 of 1993.pdf" target="_blank">SURCON Act</a> and <a href="./uploads/SURCON Regulations.pdf" target="_blank">Regulations</a></p>
+							</div>
+						</div>
+
+
+						<div class="row pb-1">
+							<div class="col-1 pl-0">
+	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cone-striped" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg">
+	<path d="M9.97 4.88l.953 3.811C10.159 8.878 9.14 9 8 9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z"/>
+	</svg>
+							</div>
+							<div class="col-11 pl-2 pr-0">
+								<p class="mb-0"><a href="./uploads/Landsurveyor Fees - Gov N196 of 4 Sept 15.pdf" target="_blank">Land Survey Tariff</a></p>
+							</div>
+						</div>
+
+
+					
+					</div>
+				</section>
+
+				
+			</div>
+		</div>
+		
+		<div class="footer-copyright text-center py-3">&copy; <span id="copyright-year"></span> African Geomatics. All Rights Reserved &nbsp;| &nbsp;<a href="./disclaimer" id="disclaimer">Disclaimer</a>
+		</div>
+				
+	</footer>
+
+
+
+
+	<button onclick="topFunction()" id="top-link" title="Back to top">
+	 	<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-up" fill="currentColor" focusable="false" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+		</svg>
+		<!--<span>Top</span>-->
+	</button> 
+ 
+ 	<script type="text/javascript">
+	 	//Get the button:
+		mybutton = document.getElementById("top-link");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		} 
+ 	</script>
+
+	<script>
+    	document.getElementById("copyright-year").textContent = new Date().getFullYear();
+	</script>
+	<!--<script src="js/jquery-3.5.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+<script>
+async function copyText(element) {
+    const feedback = element.nextElementSibling;
+
+    try {
+        await navigator.clipboard.writeText(element.dataset.copy);
+        feedback.textContent = 'Copied!';
+
+        setTimeout(() => {
+            feedback.textContent = '';
+        }, 2000);
+    } catch (error) {
+        feedback.textContent = 'Copy failed. Please copy manually.';
+    }
+}
+</script>
+</body>
+</html>

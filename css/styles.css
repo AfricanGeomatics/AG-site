@@ -79,10 +79,6 @@ a:hover {
 	text-decoration: underline;
 }
 
-.a-blue-line:visited{
-	color: #551A8B;
-}
-
 .a-blue-line:hover{
 	color:#068edb;
 	text-decoration: underline;
@@ -94,13 +90,23 @@ a:hover {
 	text-decoration: none;
 }
 
-.a-blue:visited{
-	color: #551A8B;
-}
-
 .a-blue:hover{
 	color:#068edb;
 	text-decoration: underline;
+}
+
+.copy-text {
+    cursor: pointer;
+}
+
+.copy-text:hover {
+    color: #007bff;
+}
+
+.copy-feedback {
+    color: #198754;
+    font-size: 0.875rem;
+    margin-left: 8px;
 }
 
 section {
@@ -523,6 +529,8 @@ hr{
 .info-card-img{
 	width:100%;
 }
+
+
 
 .img-hover-zoom {
   	width: 100%; 
@@ -988,12 +996,13 @@ hr{
 }
 
 .namibian-system-card {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    min-height: 150px;
+	align-items: flex-start;
+    display: flex;
+   	text-align: left;
+    min-height: 100px;
     padding: 20px;
+    gap: 8px;
     background: #fff;
     border: 1px solid #d9deea;
     border-top: 3px solid #324b65;
@@ -1004,7 +1013,17 @@ hr{
                 border-color 0.2s ease;
 }
 
+.namibian-system-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
+.namibian-system-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
 
 
 .namibian-system-card:hover,
@@ -1019,13 +1038,14 @@ hr{
 .namibian-system-icon {
     font-size: 1.65rem;
     line-height: 1;
-    margin-bottom: 14px;
+    margin-bottom: 0;
+	flex-shrink: 0;
 }
 
 .namibian-system-card-title {
     font-weight: 700;
     font-size: 1.1rem;
-    margin-bottom: 6px;
+    margin-bottom: 0px;
 }
 
 .namibian-system-card-description {
@@ -1048,7 +1068,7 @@ hr{
     }
 
     .namibian-system-card {
-        min-height: 155px;
+        min-height: 100px;
         padding: 15px;
     }
 }
@@ -1062,7 +1082,50 @@ hr{
 }
 
 
+/* Topographic Maps --------------------------------------------*/
 
+.topomap-img{
+	width:100%;
+	height: auto;
+}
+@media (max-width: 991.98px) {
+    .topomap-img {
+        width: auto;
+        max-width: 100%;
+        max-height: 250px;
+        object-fit: contain;
+    }
+}
+
+.gis-img-short {
+    height: 150px;
+    width: auto;
+    display: block;
+    margin-right: auto;
+    
+    margin-left: -15px;
+
+  
+    border: 1px solid #1d2b3a;
+	border-color:#324b65;
+}
+#qgis2{
+	max-width: 460px;
+	display: block;
+    margin-right: auto;
+    margin-left: -15px;
+	border: 1px solid #1d2b3a;
+	border-color:#324b65;
+}
+#arcgis1{
+	height: 190px;
+    width: auto;
+	display: block;
+    margin-right: auto;
+    margin-left: 20px;
+    border: 1px solid #1d2b3a;
+	border-color:#324b65;	
+}
 
 
 
@@ -1105,7 +1168,7 @@ hr{
 	/*border-bottom-left-radius: calc(.25rem - 1px);
     border-bottom-right-radius: calc(.25rem - 1px);*/
 }
-#img-natasha{
+#img-clients{
 	max-width: 300px;
 }
 	
