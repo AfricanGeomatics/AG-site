@@ -1222,10 +1222,11 @@ hr{
 
 .page-footer{
 	background-color: #1d2b3a;
-	color: #e0e5f3;}
+	color: #e0e5f3;
+}
 
 .page-footer h4{
-	
+	color: #e0e5f3;
     font-size: 1.1rem;
     text-align:center;
     padding-bottom: 1rem;
