@@ -285,14 +285,18 @@ hr{
 
 
 /*cards -----------------------------*/
+
+
+
+
 .card{
     border-radius: 4px;
 }
 
 .card-shadow {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);	
     border: none;
-    transition: box-shadow 0.1s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .card-shadow:hover{
@@ -358,7 +362,7 @@ hr{
     border-bottom-left-radius: calc(.25rem - 1px);
     border-bottom-right-radius: calc(.25rem - 1px);*/
 }
-
+/* do i still have these?*/
 .background-card{
 	border-radius: 4px;
 	/*border-top-left-radius: calc(.25rem - 1px);
@@ -386,11 +390,11 @@ hr{
     border-bottom-left-radius: calc(.25rem - 1px);
     border-bottom-right-radius: calc(.25rem - 1px);*/
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);	
-    transition: box-shadow 0.1s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .link-card:hover {
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -422,7 +426,13 @@ hr{
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
+    /*border: 1px solid #d9deea;*/
 }
+
+.services-card:hover {
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4);
+}
+
 
 .services-card .card-body{
    	padding:1rem;
@@ -448,12 +458,12 @@ hr{
     color: #ffffff;
     border: none;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 0.1s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 .contact-card:hover {
     /*box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.25);*/
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4);
 }
 
 .contact-card {
@@ -536,8 +546,8 @@ hr{
   	width: 100%; 
   	overflow: hidden; 
 	margin:auto;
-	/*border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);*/
+	border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
 }
 
 .img-hover-zoom img {
@@ -692,12 +702,14 @@ hr{
 #index-contact {
     height: calc(100% - 1.5rem);
 }
+
 #index-services{/*card services overview*/
 	min-height: 250px;
+	/*border: 1px solid #d9deea;*/
 }
 
 #index-services:hover {
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.3);
 }
 
 #index-projects .col-md-4 .title-top {
@@ -748,10 +760,13 @@ hr{
 	max-width:600px;
 	margin:auto;
 	min-height: 250px;
-}
+	/*border: 1px solid #d9deea;*/
+}	
 #index-about:hover {
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.3);
 }
+
+
 
 #index-uav{
 	background-image:url('../images/uav/drone.jpg') ;
@@ -1195,7 +1210,7 @@ hr{
  	padding-bottom:40%;
     position:relative;
     height:0;
-	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 .contact-map-container iframe{
     position: absolute;
