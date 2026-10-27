@@ -11,12 +11,6 @@ body{
 	font-family: 'Roboto', sans-serif;
 }
 
-h1,h2{
-	/*font-size: 1.5rem;*/
-	/*padding-left:3rem;
-	padding-right:3rem;*/
-}
-
 h1{
 	color: #324b65;
     font-size: 2.15rem;
@@ -42,7 +36,6 @@ h3,h4{
 h3.card-title{
 	color:white;
 }
-
 
 .link-card h4 {
     color: black;
@@ -229,7 +222,6 @@ section {
 
 /*general-----------------------------*/
 
-
 hr{
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -286,9 +278,6 @@ hr{
 
 /*cards -----------------------------*/
 
-
-
-
 .card{
     border-radius: 4px;
 }
@@ -327,7 +316,6 @@ hr{
 }
 
 .card-img-radius-sm-left{
-	
 	border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 0;
@@ -362,20 +350,6 @@ hr{
     border-bottom-left-radius: calc(.25rem - 1px);
     border-bottom-right-radius: calc(.25rem - 1px);*/
 }
-/* do i still have these?*/
-.background-card{
-	border-radius: 4px;
-	/*border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);
-    border-bottom-left-radius: calc(.25rem - 1px);
-    border-bottom-right-radius: calc(.25rem - 1px);*/
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 0.1s ease-in-out;	
-}
-.background-card:hover {
-    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.5);
-}
-
 
 .link-card {
 	height:250px;
@@ -518,29 +492,9 @@ hr{
     color: #e6a23c;
 }
 
-.projects-intro {
-    padding: 1.5rem;
-}
-
-
-
-/* not used?
-.info-card{
-	
-        background-color:#ffffff;
-	/*background-color: #eceff2;
-	border-radius: 0;
-	border: 1px solid #1d2b3a;*/
-	/*border-radius: calc(.25rem - 1px);*/
-/*}*/
-
-
-
 .info-card-img{
 	width:100%;
 }
-
-
 
 .img-hover-zoom {
   	width: 100%; 
@@ -603,80 +557,7 @@ hr{
 
 .embed-responsive .card-img {
     object-fit: cover;
-    }
-
-/*
-.btn-imagecard{
-	position: absolute;
-  	bottom:1.2rem;
-	left: 50%;
-    transform: translateX(-50%);
-	min-width:112px;
-	color:#1d2b3a;
-	background-color:#f98717;
-  	border: none; 
-	outline: none; 
-	font-weight: 500;
-	padding: .3rem .65rem;
-	transition: all 0.25s ease-in-out;
 }
-
-.btn-imagecard:hover{
-	color: white;
-	background-color: #324b65;
-	
-}
-
-.btn-imagecard-white{
-	position: absolute;
-  	bottom:1.2rem;
-	left: 50%;
-    transform: translateX(-50%);
-	min-width:112px;
-	background-color: rgba(255,255,255, 0.4);
-
-	color:#1d2b3a;
-  	border-color: #1d2b3a;
-	font-weight: 500;
-	padding: .3rem .65rem;
-	transition: all 0.3s ease-in-out;
-}
-
-.btn-imagecard-white:hover{
-	color: white;
-	background-color: #324b65;
-	
-*/
-/*
-.btn-back {
-	min-width:112px;
-	background-color: white;
-	color:#1d2b3a;
-  	border-color: #1d2b3a;
-	font-weight: 500;
-	padding: .65rem .65rem;  
-	box-shadow: 0 2px 6px rgba(0,0,0,.5);
- 	transition: all 0.25s ease-in-out;
-}
-
-.btn-back:hover {
-	color: white;
-	background-color: #324b65;
-}
-
-.btn-outline-primary {
-    color: #1d2b3a;
-    border-color: #1d2b3a;
-    font-weight: 500;
-    padding: .3rem .65rem;  
-    transition: all 0.25s ease-in-out;
-}
-
-.btn-outline-primary:hover {
-	border-color:#324b65;	
-	background-color: #f4b85a;
-}
-*/
 
 .btn-outline-orange {
     color: #1d2b3a;
@@ -738,19 +619,11 @@ hr{
     padding-bottom: .5rem;
 }
 
-/*#index-map-system-image{
-		
-        height: 400px;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-	}*/
 #index-map-system-image {
     display: block;
     width: 100%;
     height: auto;
 }
-
 
 #index-gps-converter-img{
 	max-width: 600px;
@@ -758,7 +631,6 @@ hr{
 	border: 1px solid #1d2b3a;
 	border-color:#324b65;
 }
-
 #index-schwarzeck-transformation-img{
 	max-width: 600px;
 	margin:auto;
@@ -794,8 +666,7 @@ hr{
 	}
 /*#index-cadastral:hover{
 	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url('../images/cadastral/farm_beacon1.jpg');
-}*/
-
+*/
 #index-topographical{
 	background-image:url('../images/topographic/topo4.jpg') ;
 }
@@ -833,26 +704,6 @@ hr{
 #index-projects .card-title {
     margin-top: 15px;
 }
-
-#index-projects2{
-	background-image:url('../images/project_kunene/kunene1.jpg');
-	background-position: center;
-	overflow:hidden;
-	background-size:cover;
-	/*min-height:500px;*/
-	position:relative;
-	border:none;
-	max-width:600px;
-	margin:auto;
-	min-height: 400px;
-}
-#index-projects2 > a {
-    display: block;
-    height: 100%;
-    color: inherit;
-    text-decoration: none;
-}
-
 
 /*services.html-----------------------*/
 
@@ -1388,13 +1239,9 @@ svg{
 	outline: none; 
 	cursor: pointer; 
 	text-align: center; 
-	/*color:#1d2b3a;
-	background-color:#11f96e;*/
-        /*background-color: #f4b85a;*/
-        background-color:#f98717;
-        color: #324b65;
-        /*background-color:#e6a23c;*/
-
+    background-color:#f98717;
+    color: #324b65;
+ 
 	border-radius: .25rem; 
 	font-size: .9rem; 
 	font-weight: 600;
@@ -1408,15 +1255,7 @@ svg{
 	font-weight: 400; 
 	transition: background-color 0.25s ease;
 }
-/*
-#top-link span{
-	position: relative;
-    bottom: .3rem;
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-}
-*/
+
 #top-link span{    
     text-align: center;
     text-transform: uppercase;
@@ -1471,8 +1310,6 @@ svg{
 		max-height:300px;
 	}
 	#about-clients{
-		/*border: 1px solid #1d2b3a;
-		background-color: #eceff2;*/
 		max-width:700px;
 		margin:auto;
 	}
@@ -1525,8 +1362,6 @@ svg{
 		max-height:300px;
 	}
 	#about-clients{
-	/*border: 1px solid #1d2b3a;
-	background-color: #eceff2;*/
 		max-width:700px;
 		margin:auto;
 	}
@@ -1640,13 +1475,7 @@ svg{
 	    border-bottom-left-radius: calc(.25rem - 1px);
 	    border-bottom-right-radius: 0;*/
 	}
-    /*#index-map-system-image{
-        margin-top: -1rem;
-        height: 220px;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-	}*/
+ 
 }
 
 @media (min-width:576px) and (max-width:659px){
@@ -1694,14 +1523,6 @@ svg{
 	    border-bottom-left-radius: calc(.25rem - 1px);
 	    border-bottom-right-radius: 0;*/
 	}
-    /*#index-map-system-image{
-		margin-top: -2rem;
-		height: 220px;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-
-	}*/
 
 }
 
@@ -1731,13 +1552,7 @@ svg{
 	#index-services-image{
 		max-height: 250px;
 	}
-	/*#index-map-system-image{
-		margin-top: -2rem;
-		height: 220px;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-	}*/
+
 	#index-about-image{
 		max-height: 400px;
 	}
@@ -1769,13 +1584,7 @@ svg{
 	#index-services-image{
 		max-height: 250px;
 	}
-	/*#index-map-system-image{
-		margin-top: -2rem;
-		height: 220px;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-    }*/
+
 	#index-about-image{
 		max-height: 400px;
 	}
